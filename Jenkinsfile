@@ -5,6 +5,7 @@ pipeline {
  //environment { VERSION = readMavenPom().getVersion() }
 
  // Retention Policy for keeping 2 Builds and 1 Artifact
+ // Retention Policy for keeping 2 Builds and 1 Artifact
  options {
   buildDiscarder(logRotator(numToKeepStr: '2', artifactNumToKeepStr: '1'))
  }
